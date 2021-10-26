@@ -19,7 +19,7 @@ public class Matrix {
 
         Matrix matrix = new Matrix();
 
-        int[][] mTrue = {
+        int[][] m5True = {
                 {1, 2, 3, 4, 5},
                 {0, 2, 3, 4, 5},
                 {0, 0, 3, 4, 5},
@@ -27,9 +27,17 @@ public class Matrix {
                 {0, 0, 0, 0, 5},
         };
 
-        System.out.println(matrix.isZeroAllUnderDiagonal(mTrue));
+        int[][] m4True = {
+                {1, 2, 3, 4},
+                {0, 2, 3, 4},
+                {0, 0, 3, 4},
+                {0, 0, 0, 4},
+        };
 
-        int[][] mFalse = {
+        System.out.println(matrix.isZeroAllUnderDiagonal(m5True));
+        System.out.println(matrix.isZeroAllUnderDiagonal(m4True));
+
+        int[][] m5False = {
                 {1, 2, 3, 4, 5},
                 {0, 2, 3, 4, 5},
                 {0, 0, 3, 4, 5},
@@ -37,7 +45,15 @@ public class Matrix {
                 {0, 0, 0, 4, 5},
         };
 
-        System.out.println(matrix.isZeroAllUnderDiagonal(mFalse));
+        int[][] m4False = {
+                {1, 2, 3, 4},
+                {0, 2, 3, 4},
+                {0, 0, 3, 4},
+                {0, 0, 3, 4},
+        };
+
+        System.out.println(matrix.isZeroAllUnderDiagonal(m5False));
+        System.out.println(matrix.isZeroAllUnderDiagonal(m4False));
 
     }
 
