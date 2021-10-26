@@ -2,7 +2,7 @@ package day02;
 
 public class Matrix {
 
-    public boolean isZeroUnderDiagonal(int[][] matrix) {
+    public boolean isZeroAllUnderDiagonal(int[][] matrix) {
 
         for (int i = 1; i < matrix.length; i++) {
             for (int j = 0; j < i; j++) {
@@ -27,7 +27,7 @@ public class Matrix {
                 {0, 0, 0, 0, 5},
         };
 
-        System.out.println(matrix.isZeroUnderDiagonal(mTrue));
+        System.out.println(matrix.isZeroAllUnderDiagonal(mTrue));
 
         int[][] mFalse = {
                 {1, 2, 3, 4, 5},
@@ -37,7 +37,7 @@ public class Matrix {
                 {0, 0, 0, 4, 5},
         };
 
-        System.out.println(matrix.isZeroUnderDiagonal(mFalse));
+        System.out.println(matrix.isZeroAllUnderDiagonal(mFalse));
 
     }
 
