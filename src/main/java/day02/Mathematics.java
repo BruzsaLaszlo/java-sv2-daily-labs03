@@ -6,7 +6,7 @@ public class Mathematics {
 
         if (number < 2) return false;
 
-        for (int i = 2; i < Math.sqrt(number); i++) {
+        for (int i = 2; i <= Math.sqrt(number); i++) {
             if (number % i == 0) {
                 System.out.println(i + " osztója a {" + number + "}-nak/nek");
                 return false;
