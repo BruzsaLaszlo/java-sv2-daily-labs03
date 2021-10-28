@@ -9,8 +9,8 @@ public class Sultan {
         prison.openFreeCells();
 
         for (int i = 0; i < prison.getCells().length; i++) {
-            if(prison.getCells()[i])
-                System.out.println(i);
+            if (prison.getCells()[i])
+                System.out.println(i + 1);
         }
 
     }
