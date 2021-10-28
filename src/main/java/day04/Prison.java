@@ -6,7 +6,7 @@ public class Prison {
 
     public void openFreeCells() {
         for (int i = 0; i < 100; i++) {
-            for (int j = 0; j < 100; j += i + 1) {
+            for (int j = i; j < 100; j += i + 1) {
                 cells[j] = !cells[j];
             }
         }
@@ -15,4 +15,5 @@ public class Prison {
     public boolean[] getCells() {
         return cells;
     }
+
 }
